@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@import "partials/variables";
+@import "partials/extra";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/estilo-index";
+@import "partials/estilo-proyectos";
+@import "partials/estilo-contacto";
+@import "partials/estilo-error404";
+@import "partials/media";
+

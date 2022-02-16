@@ -1,0 +1,17 @@
+// Variables
+$color0: #000;
+$color1: #1d5a24;
+$color2: #308e38;
+$color3: #47b24f;
+$color4: #7ede84;
+// $color1: #f90;
+// $color2: #fa0;
+// $color3: #fc0;
+// $color4: #ff0;
+$color5: #eee;
+
+@mixin imgSize ($size) {
+    height: $size;
+    width: $size;
+}
+

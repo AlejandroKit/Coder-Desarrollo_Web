@@ -1,0 +1,66 @@
+// Header
+main{
+    margin-top: 19vh;
+}
+header{
+    position: absolute;
+    top: 0vh;
+    z-index: 10;
+    width: 100%;
+    background-color: $color0;
+    padding: 1em;
+    .logoTitulo{
+        display: flex;
+        align-items: flex-end;
+        .logoTitulo__linkLogo{
+            height: 5em;
+            width: 5em;
+            margin-right: 1em;
+            border: 2px solid transparent;
+            border-radius: 10%;
+            outline: 1px solid $color3;
+            .logoTitulo__logo{
+                background: radial-gradient($color4, $color2);
+                border-radius: 10%;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .logoTitulo__titulo{
+            font-family: 'Sedgwick Ave', cursive;
+            color: $color3;
+            font-weight: lighter;
+        }
+    }
+    .nav__icon{
+        color: $color3;
+    }
+    .listaLinks{
+        list-style-type: none;
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+        .listaLinks__links{
+            font-family: 'Playfair Display', serif;
+            color: $color4;
+            font-size: 1.5em;
+            margin: 0 0.5em;
+            text-decoration: none;
+            &:hover{
+                color: $color3;
+            }
+        }
+    }
+    .header__flechaHome{
+        position: fixed;
+        z-index: 10;
+        height: 4em;
+        width: 4em;
+        right: 2%;
+        bottom: 5%;
+        .header__img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

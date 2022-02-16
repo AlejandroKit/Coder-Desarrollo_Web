@@ -1,0 +1,166 @@
+// RESPONSIVE MEDIA QUERIES
+@media only screen and (min-width:576px) and (max-width:767px){
+    .mainIndex, .mainProyectos, .mainContacto{
+        margin-top: 22vh;
+    }
+    .mainIndex{
+        .sobreMiSec{
+            display: inline-block;
+            .row{
+                display: inline-block;
+                .retratoImg{
+                    margin-right: 1em;
+                    float: left;
+                    @include imgSize(17em)
+                }
+            }
+        }
+        .bio{
+            .bioTexto{
+                font-size: .8em;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .proyectoContenedor{
+        .proyecto{
+            padding: 2em;
+            grid-column-gap: 5%;
+            grid-template-rows: 20% 80%;
+            .proyecto__img{
+                @include imgSize(15em);
+                float: none;
+            }
+            .proyecto__h2{
+                margin-top: -.5em;
+                font-size: 2em;
+                text-shadow: 1px 1px 1px $color0;
+            }
+            .proyecto__p{
+                font-size: 1.2em;
+            }
+        }
+    }
+    .canalYT{
+        display: flex;
+        flex-direction: column;
+        .canalYT__h2{
+            font-size: 2.6em;
+        }
+        iframe{
+            width: 100%;
+        }
+    }
+
+    .mainContacto{
+        .contactoContenedor{
+            margin: 0;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            .formulario{
+                height: 60vh;
+                border-radius: 2%;
+            }
+            .contactoRedes{
+                text-align: center;
+                margin: 2em 0;
+                padding: 0;
+                .listaLinks{
+                    justify-items: start;
+                    font-size: .8em;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .mainIndex, .mainProyectos, .mainContacto{
+        margin-top: 22vh;
+    }
+
+    .mainIndex{
+        .sobreMiSec{
+            display: inline-block;
+            .row{
+                display: inline-block;
+                .retratoImg{
+                    margin-right: 2em;
+                    float: left;
+                    @include imgSize(19em)
+                }
+                .bio{
+                    margin-top: -4vh;
+                    .bioTexto{
+                        line-height: 1.2;
+                        font-size: .9em;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainProyectos{
+        .proyectoContenedor{
+            .proyecto{
+                padding: 2em;
+                grid-template-rows: 20% 80%;
+                grid-column-gap: 5%;
+                .proyecto__img{
+                    @include imgSize(15em);
+                    float: none;
+                }
+                .proyecto__h2{
+                    margin-top: -.5em;
+                    font-size: 2.5em;
+                    text-shadow: 1px 1px 1px $color0;
+                }
+                .proyecto__p{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .canalYT{
+            display: flex;
+            flex-direction: column;
+            .canalYT__h2{
+                font-size: 2.6em;
+            }
+            iframe{
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    }
+
+    .mainContacto{
+        .contactoContenedor{
+            margin: 0;
+            padding: 4em;
+            display: flex;
+            flex-direction: column;
+            .formulario{
+                height: 70vh;
+                border-radius: 2%;
+            }
+            .contactoRedes{
+                text-align: center;
+                margin: 2em 0;
+                padding: 0;
+                .listaLinks{
+                    justify-items: start;
+                    font-size: .9em;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                }
+            }
+        }
+    }
+}

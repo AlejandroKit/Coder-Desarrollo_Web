@@ -1,0 +1,122 @@
+// ESTILOS INDEX
+.conocimientosSec{
+    height: 90vh;
+    background-image: url("../images/programacion2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    background-size: cover;
+    .conocimientos{
+        background: radial-gradient(transparent 50%, $color0);
+        height: 90vh;
+        .conocimientosTexto{
+            height: 90vh;
+            background: linear-gradient(90deg, #0008 80%, transparent);
+            text-shadow: 0px 0px 1px $color0;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            gap: 10px 40px;
+            grid-template-columns: repeat(4,80px);
+            .conocimientosTexto__h2{
+                grid-column: 1/5;
+            }
+            .conocimientosTexto__h3{
+                color: $color4;
+                font-size: 23px;
+                grid-column: 1/5;
+                grid-row: 2/3;
+            }
+            .tecnologia__img{
+                @include imgSize (100%);
+            }
+            $tecs:(
+                html:#f7790a,
+                css:#0a8cf7,
+                react:#4fe5ff,
+                js:#ffff00
+            );
+            @each $tec,$colors in $tecs {
+                .tec#{$tec}{
+                    color: $color3;
+                    border-bottom: 2px solid $color3;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    grid-row: 3/4;
+                    margin: 30px 0;
+                    transition: 1s;
+                    &:hover{
+                        font-weight: bold;
+                        transform: scale(1.5);
+                        color:$colors;
+                        border-bottom: 2px solid $colors;
+                    }
+                }
+            }
+        }
+        .descripcion{
+            grid-column: 1/5;
+            grid-row: 4/5;
+            .descripcion__p{
+                color: $color4;
+                font-size: 23px;
+                font-family: 'Luxurious Roman', cursive;
+            }
+        }
+    }
+}
+
+.sobreMiSec{
+    background: linear-gradient(45deg, transparent, $color3, $color2, $color1);
+    padding: 5vh;
+    .retratoImg{
+        @include imgSize (25em);
+        border: .7em solid $color4;
+        outline: .7em outset $color3;
+    }
+    .bioTexto__p{
+        color: $color4;
+        text-shadow: 2px 2px 3px #111;
+        font-size: 2em;
+        font-family: 'Luxurious Roman', cursive;
+    }
+}
+
+.proyectosPrevSec{
+    background-image: url("../images/desarrollo-web.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    .proyectosPrev{
+        background: radial-gradient(transparent 60%, $color0);
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .proyectosPrev__h2{
+            text-align: center;
+        }
+        .carousel__container{
+            width: 100%;
+            li{
+                height: 1em;
+                width: 1em;
+                border-radius: 50%
+            }
+            .carousel-item{
+                margin-bottom: 3em;
+                img{
+                    @include imgSize (20em);
+                    border: 1em $color4;
+                    border-style:ridge;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

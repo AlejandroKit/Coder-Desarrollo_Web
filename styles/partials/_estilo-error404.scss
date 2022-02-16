@@ -1,0 +1,39 @@
+// Estilo error404
+.mainError{
+    height: 100vh;
+    background-color: #0f0a39;
+    margin: 0;
+    .errorContainer{
+        color: #0f0a79;
+        text-align: center;
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        .error__h1{
+            font-size: 10em;
+            font-family: 'Teko', sans-serif;
+            line-height: .6;
+        }
+        .error__h2{
+            color: #0f0a79;
+            text-shadow: none;
+            text-decoration: none;
+            font-size: 1.5em;
+            line-height: .8;
+            margin-bottom: 1em;
+        }
+        .errorTexto{
+            p{
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.5em;
+                line-height: 1.2;
+                a{
+                    color: $color1;
+                }
+                span{
+                    font-size: .6em;
+                }
+            }
+        }
+    }
+}
