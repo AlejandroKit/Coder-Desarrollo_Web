@@ -1,20 +1,23 @@
 // ESTILO CONTACTO
-.contactoSec{
+.contactoSec {
     background: linear-gradient(45deg, transparent, $color4, $color3, $color2);
-    .contactoContenedor{
+
+    .contactoContenedor {
         width: 100%;
         margin: 0;
         display: flex;
         padding: 4em;
-        .formulario{
+
+        .formulario {
             background-color: #444;
             height: 50vh;
             padding: 1%;
             flex-grow: 3;
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: repeat(7,1fr);
-            .formulario__input{
+            grid-template-rows: repeat(7, 1fr);
+
+            .formulario__input {
                 background-color: transparent;
                 color: $color4;
                 border: none;
@@ -23,12 +26,14 @@
                 height: 50%;
                 margin: 0 1%;
                 outline: none;
-                &:focus{
-                    background: linear-gradient(transparent,#333);
+
+                &:focus {
+                    background: linear-gradient(transparent, #333);
                     border-bottom: 3px solid $color4;
                 }
             }
-            .formulario__textarea{
+
+            .formulario__textarea {
                 background-color: transparent;
                 color: $color4;
                 border: none;
@@ -38,12 +43,14 @@
                 outline: none;
                 grid-row: 3 /7;
                 grid-column: 1/3;
-                &:focus{
-                    background: linear-gradient(transparent,#333);
+
+                &:focus {
+                    background: linear-gradient(transparent, #333);
                     border-bottom: 3px solid $color4;
                 }
             }
-            .formulario__button{
+
+            .formulario__button {
                 color: $color4;
                 background-color: $color0;
                 border: 3px solid #444;
@@ -52,31 +59,37 @@
                 grid-column: 1/3;
             }
         }
-        .contactoRedes{
+
+        .contactoRedes {
             padding: 0 3em;
             margin-left: 8em;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            .listaLinks{
+
+            .listaLinks {
                 list-style: none;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 flex-grow: 1;
-                .listaLinks__item{
+
+                .listaLinks__item {
                     color: $color0;
                     font-size: 150%;
-                    .listaLinks__icon{
+
+                    .listaLinks__icon {
                         margin: 5% 0;
                         margin-right: 1em;
                     }
-                    .listaLinks__link{
+
+                    .listaLinks__link {
                         color: $color4;
                         text-decoration: none;
                         text-shadow: 2px 1px 2px $color0;
-                        &:hover{
+
+                        &:hover {
                             color: $color3;
                         }
                     }

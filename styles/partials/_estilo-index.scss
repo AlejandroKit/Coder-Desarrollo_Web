@@ -1,5 +1,5 @@
 // ESTILOS INDEX
-.conocimientosSec{
+.conocimientosSec {
     height: 90vh;
     background-image: url("../images/programacion2.jpg");
     background-repeat: no-repeat;
@@ -8,10 +8,12 @@
     background-position: center;
     background-position: top;
     background-size: cover;
-    .conocimientos{
+
+    .conocimientos {
         background: radial-gradient(transparent 50%, $color0);
         height: 90vh;
-        .conocimientosTexto{
+
+        .conocimientosTexto {
             height: 90vh;
             background: linear-gradient(90deg, #0009 80%, transparent);
             text-shadow: 0px 0px 1px $color0;
@@ -19,27 +21,31 @@
             justify-content: center;
             align-content: center;
             gap: 10px 40px;
-            grid-template-columns: repeat(4,80px);
-            .conocimientosTexto__h2{
+            grid-template-columns: repeat(4, 80px);
+
+            .conocimientosTexto__h2 {
                 grid-column: 1/5;
             }
-            .conocimientosTexto__h3{
+
+            .conocimientosTexto__h3 {
                 color: $color4;
                 font-size: 23px;
                 grid-column: 1/5;
                 grid-row: 2/3;
             }
-            .tecnologia__img{
+
+            .tecnologia__img {
                 @include imgSize (100%);
             }
-            $tecs:(
-                html:#f7790a,
+
+            $tecs:(html:#f7790a,
                 css:#0a8cf7,
                 react:#4fe5ff,
-                js:#ffff00
-            );
-            @each $tec,$colors in $tecs {
-                .tec#{$tec}{
+                js:#ffff00);
+
+            @each $tec,
+            $colors in $tecs {
+                .tec#{$tec} {
                     color: $color3;
                     border-bottom: 2px solid $color3;
                     display: flex;
@@ -47,19 +53,23 @@
                     align-items: center;
                     grid-row: 3/4;
                     margin: 30px 0;
-                    &:hover{
+                    transition: .5s;
+
+                    &:hover {
                         font-weight: bold;
                         transform: scale(1.5);
-                        color:$colors;
+                        color: $colors;
                         border-bottom: 2px solid $colors;
                     }
                 }
             }
         }
-        .descripcion{
+
+        .descripcion {
             grid-column: 1/5;
             grid-row: 4/5;
-            .descripcion__p{
+
+            .descripcion__p {
                 color: $color4;
                 font-size: 23px;
                 font-family: 'Luxurious Roman', cursive;
@@ -68,15 +78,17 @@
     }
 }
 
-.sobreMiSec{
+.sobreMiSec {
     background: linear-gradient(45deg, transparent, $color3, $color2, $color1);
     padding: 5vh;
-    .retratoImg{
+
+    .retratoImg {
         @include imgSize (25em);
         border: .7em solid $color4;
         outline: .7em outset $color3;
     }
-    .bioTexto__p{
+
+    .bioTexto__p {
         color: $color4;
         text-shadow: 2px 2px 3px #111;
         font-size: 2em;
@@ -84,34 +96,40 @@
     }
 }
 
-.proyectosPrevSec{
+.proyectosPrevSec {
     background-image: url("../images/desarrollo-web.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom;
-    .proyectosPrev{
+
+    .proyectosPrev {
         background: radial-gradient(transparent 60%, $color0);
         padding: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .proyectosPrev__h2{
+
+        .proyectosPrev__h2 {
             text-align: center;
         }
-        .carousel__container{
+
+        .carousel__container {
             width: 100%;
-            li{
+
+            li {
                 height: 1em;
                 width: 1em;
                 border-radius: 50%
             }
-            .carousel-item{
+
+            .carousel-item {
                 margin-bottom: 3em;
-                img{
+
+                img {
                     @include imgSize (20em);
                     border: 1em $color4;
-                    border-style:ridge;
+                    border-style: ridge;
                     display: block;
                     margin: auto;
                 }
