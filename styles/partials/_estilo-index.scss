@@ -35,16 +35,17 @@
             }
 
             .tecnologia__img {
-                @include imgSize (100%);
+                @include imgSize(100%);
             }
 
-            $tecs:(html:#f7790a,
-                css:#0a8cf7,
-                react:#4fe5ff,
-                js:#ffff00);
+            $tecs: (
+                html: #f7790a,
+                css: #0a8cf7,
+                react: #4fe5ff,
+                js: #ffff00,
+            );
 
-            @each $tec,
-            $colors in $tecs {
+            @each $tec, $colors in $tecs {
                 .tec#{$tec} {
                     color: $color3;
                     border-bottom: 2px solid $color3;
@@ -53,7 +54,7 @@
                     align-items: center;
                     grid-row: 3/4;
                     margin: 30px 0;
-                    transition: .5s;
+                    transition: 0.5s;
 
                     &:hover {
                         font-weight: bold;
@@ -72,7 +73,7 @@
             .descripcion__p {
                 color: $color4;
                 font-size: 23px;
-                font-family: 'Luxurious Roman', cursive;
+                font-family: "Luxurious Roman", cursive;
             }
         }
     }
@@ -83,16 +84,16 @@
     padding: 5vh;
 
     .retratoImg {
-        @include imgSize (25em);
-        border: .7em solid $color4;
-        outline: .7em outset $color3;
+        @include imgSize(25em);
+        border: 0.7em solid $color4;
+        outline: 0.7em outset $color3;
     }
 
     .bioTexto__p {
         color: $color4;
         text-shadow: 2px 2px 3px #111;
         font-size: 2em;
-        font-family: 'Luxurious Roman', cursive;
+        font-family: "Luxurious Roman", cursive;
     }
 }
 
@@ -120,14 +121,14 @@
             li {
                 height: 1em;
                 width: 1em;
-                border-radius: 50%
+                border-radius: 50%;
             }
 
             .carousel-item {
                 margin-bottom: 3em;
 
                 img {
-                    @include imgSize (20em);
+                    @include imgSize(20em);
                     border: 1em $color4;
                     border-style: ridge;
                     display: block;
