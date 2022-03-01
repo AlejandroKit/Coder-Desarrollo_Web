@@ -6,12 +6,16 @@ footer {
     justify-content: space-evenly;
     align-items: center;
 
-    .row {
-        width: 100%;
+    .footer__img {
+        @include imgSize(10em);
+
+        img {
+            @include imgSize(100%);
+        }
     }
 
     .redes {
-        padding: 1em 0;
+        padding: .5em 0;
 
         .redes__span {
             color: #000;
@@ -21,13 +25,18 @@ footer {
         }
 
         .redesLinks {
-            margin-left: 25%;
+            margin-left: 20%;
             list-style: katakana;
 
             .redesLinks__item {
                 color: #000;
                 font-size: 1.1em;
                 font-weight: bold;
+
+                .redesLinks__link {
+                    color: $color3;
+                    text-shadow: 1px 1px 1px $color1;
+                }
             }
         }
     }

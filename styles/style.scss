@@ -4,12 +4,12 @@
     scroll-behavior: smooth;
 }
 
-@import "partials/variables";
-@import "partials/extra";
-@import "partials/header";
-@import "partials/footer";
-@import "partials/estilo-index";
-@import "partials/estilo-proyectos";
-@import "partials/estilo-contacto";
-@import "partials/estilo-error404";
-@import "partials/media";
+@import "sass/variables";
+@import "sass/extra";
+@import "sass/header";
+@import "sass/footer";
+@import "sass/estilo-index";
+@import "sass/estilo-proyectos";
+@import "sass/estilo-contacto";
+@import "sass/estilo-error404";
+@import "sass/media";

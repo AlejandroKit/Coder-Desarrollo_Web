@@ -1,53 +1,62 @@
 // RESPONSIVE MEDIA QUERIES
 @media only screen and (min-width:320px) and (max-width:575px) {
-    header{
+    header {
         padding: 0;
-        .nav{
+
+        .nav {
             width: 100%;
             margin: 0;
             padding: 1em 0;
-            .logoTitulo{
+
+            .logoTitulo {
                 display: flex;
                 width: 85%;
-                .logoTitulo__linkLogo{
+
+                .logoTitulo__linkLogo {
                     @include imgSize(3em)
                 }
-                .logoTitulo__titulo{
+
+                .logoTitulo__titulo {
                     font-size: 1.5em;
                 }
             }
         }
-        .header__flechaHome{
+
+        .header__flechaHome {
             @include imgSize(2.7em);
             right: .5em;
             bottom: .5em;
         }
     }
 
-    main{
-        margin-top: 14vh;
+    main {
+        margin-top: 5em;
     }
 
     .mainIndex {
-        .conocimientos{
-            .conocimientosTexto{
+        .conocimientos {
+            .conocimientosTexto {
                 background: linear-gradient(#0008, #0008);
                 padding: 0;
                 grid-template-columns: repeat(4, 3.8em);
                 grid-column-gap: 1em;
-                .conocimientosTexto__h3{
+
+                .conocimientosTexto__h3 {
                     font-size: 1.3em;
                     text-shadow: 1px 1px 2px #000;
                     grid-column: 1/5;
                 }
-                .tecnologia{
+
+                .tecnologia {
                     margin: 0;
-                    .tecnologia__span{
+
+                    .tecnologia__span {
                         font-weight: bold;
                         text-shadow: 1px 1px 2px #000;
                     }
                 }
-                .descripcion__p{
+
+                .descripcion__p {
                     text-shadow: 1px 1px 2px #000;
                 }
             }
@@ -56,14 +65,17 @@
         .sobreMiSec {
             display: inline-block;
             padding: 2em 1em;
+
             .row {
                 .retratoImg {
                     margin: auto;
                     @include imgSize(15em)
                 }
-                .bio{
+
+                .bio {
                     margin: 1em 0;
-                    .bioTexto{
+
+                    .bioTexto {
                         text-align: center;
                         font-size: .7em;
                         line-height: 1.1;
@@ -72,10 +84,10 @@
             }
         }
 
-        .proyectosPrevSec{
-            .carousel__container{
-                .carousel-inner{
-                    img{
+        .proyectosPrevSec {
+            .carousel__container {
+                .carousel-inner {
+                    img {
                         @include imgSize(15em)
                     }
                 }
@@ -83,65 +95,79 @@
         }
     }
 
-    .mainProyectos{
-        .proyecto{
+    .mainProyectos {
+        .proyecto {
             display: flex;
             flex-direction: column;
-            .proyecto__img{
+
+            .proyecto__img {
                 @include imgSize(15em);
                 border: .3em solid transparent;
                 outline: .7em ridge $color1;
                 margin: 1em auto;
             }
-            .proyecto__h2{
+
+            .proyecto__h2 {
                 font-size: 2em;
                 text-shadow: 1px 1px 1px #000;
             }
-            .proyecto__p{
+
+            .proyecto__p {
                 font-size: 1em;
                 line-height: 1;
                 text-align: center;
             }
         }
-        .canalYT{
+
+        .canalYT {
             display: flex;
             flex-direction: column;
-            .canalYT__h2{
+
+            .canalYT__h2 {
                 font-size: 2.04em;
                 margin: 0;
-                span{
+
+                span {
                     margin: 0;
                 }
             }
-            .canalYTTexto__p{
+
+            .canalYTTexto__p {
                 font-size: .7em;
                 line-height: 1;
                 margin: 0;
             }
-            .canalYTTexto__link{
+
+            .canalYTTexto__link {
                 font-size: .7em;
             }
-            iframe{
+
+            iframe {
                 width: 100%;
                 height: 35vh;
             }
         }
     }
 
-    .mainContacto{
-        .contactoContenedor{
+    .mainContacto {
+        .contactoContenedor {
             padding: 1em;
             display: flex;
             flex-direction: column;
-            .formulario{
+
+            .formulario {
                 width: 100%;
                 margin: 0;
             }
-            .contactoRedes{
+
+            .contactoRedes {
                 margin: 0;
                 padding: 0;
-                .listaLinks{
-                    .listaLinks__item{
+
+                .listaLinks {
+
+                    .listaLinks__item {
+                        height: 3em;
                         font-size: 1.2em;
                     }
                 }
@@ -149,24 +175,26 @@
         }
     }
 
-    footer{
-        .footer__img{
-            margin: 0;
+    footer {
+        .footer__img {
             @include imgSize(6em);
-            flex-grow: 3;
+
+            img {
+                @include imgSize(6em);
+            }
         }
-        .redes{
-            width: 50%;
-            margin-left: 3em;
+
+        .redes {
             font-size: .5em;
-            flex-grow: 1;
-            .redesLinks{
+
+            .redesLinks {
                 margin: 0 0 0 2em;
             }
         }
     }
 
-    h2{
+    h2 {
+        text-align: center;
         font-size: 2.2em;
         text-shadow: 1px 1px 1px #000;
     }
@@ -266,14 +294,30 @@
             }
         }
     }
+
+    footer {
+        .footer__img {
+            img {
+                @include imgSize(6em);
+            }
+        }
+
+        .redes {
+            font-size: .5em;
+
+            .redesLinks {
+                margin: 0 0 0 2em;
+            }
+        }
+    }
 }
 
-@media screen and (min-width:768px) and (max-width:991px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
 
     .mainIndex,
     .mainProyectos,
     .mainContacto {
-        margin-top: 22vh;
+        margin-top: 8em;
     }
 
     .mainIndex {
@@ -293,8 +337,12 @@
                     margin-top: -4vh;
 
                     .bioTexto {
-                        line-height: 1.2;
+                        line-height: 1em;
                         font-size: .9em;
+
+                        .bioTexto__p {
+                            line-height: 1.2;
+                        }
                     }
                 }
             }
@@ -366,5 +414,26 @@
                 }
             }
         }
+    }
+
+    footer {
+        .footer__img {
+            img {
+                @include imgSize(100%);
+            }
+        }
+
+        .redes {
+            height: 100%;
+            font-size: 1em;
+
+            .redesLinks {
+                margin: 0 0 0 2em;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 3em;
     }
 }

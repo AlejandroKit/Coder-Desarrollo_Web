@@ -34,7 +34,6 @@ header {
         .logoTitulo__titulo {
             font-family: 'Sedgwick Ave', cursive;
             color: $color3;
-            font-weight: lighter;
         }
     }
 
@@ -62,16 +61,18 @@ header {
     }
 
     .header__flechaHome {
+        background-color: $color4;
         position: fixed;
         z-index: 10;
-        height: 4em;
-        width: 4em;
+        @include imgSize(4em);
+        box-shadow: 0 0 1em $color4;
+        border: 2px solid #8f8;
+        border-radius: 50%;
         right: 2%;
         bottom: 5%;
 
         .header__img {
-            height: 100%;
-            width: 100%;
+            @include imgSize(100%);
         }
     }
 }

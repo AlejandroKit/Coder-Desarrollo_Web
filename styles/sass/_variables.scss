@@ -1,0 +1,32 @@
+// Variables
+$color0: #000;
+// $color1: #4b0a2e;
+// $color2: #641c40;
+// $color3: #9d576f;
+// $color4: #b9808f;
+// $color1: #273248;
+// $color2: #af4f41;
+// $color3: #fc7643;
+// $color4: #ffa364;
+// $color1: #641662;
+// $color2: #7b2c81;
+// $color3: #a56db9;
+// $color4: #bf98d5;
+$color1: #0c2605;
+$color2: #2e590e;
+$color3: #54bc1c;
+$color4: #8ebf24;
+// $color1: #1d5a24;
+// $color2: #308e38;
+// $color3: #47b24f;
+// $color4: #7ede84;
+// $color1: #f90;
+// $color2: #fa0;
+// $color3: #fc0;
+// $color4: #ff0;
+$color5: #eee;
+
+@mixin imgSize ($size) {
+    height: $size;
+    width: $size;
+}
