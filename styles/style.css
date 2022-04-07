@@ -17,7 +17,7 @@ h2 {
 }
 
 main {
-  margin-top: 19vh;
+  margin-top: 18vh;
 }
 
 header {
@@ -391,6 +391,14 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
   grid-column: 1/3;
 }
 
+.proyectoContenedor .proyecto2 .proyecto__h2 span {
+  color: #f60;
+  margin-left: .5em;
+  font-size: .7em;
+  text-shadow: none;
+  box-shadow: 5px 5px 8px #000;
+}
+
 .proyectoContenedor .proyecto2 .proyecto__p {
   font-family: 'Playfair Display', serif;
   color: #000;
@@ -402,7 +410,7 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
 }
 
 .proyectoContenedor .proyecto2 .proyecto__p a {
-  color: #8ebf24;
+  color: #2e590e;
   text-decoration: none;
 }
 
