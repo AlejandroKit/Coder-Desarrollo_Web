@@ -17,7 +17,7 @@ h2 {
 }
 
 main {
-  margin-top: 18vh;
+  margin-top: 19vh;
 }
 
 header {
@@ -494,7 +494,7 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
 }
 
 .canalYT iframe:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .contactoSec {
@@ -527,6 +527,7 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
   height: 50%;
   margin: 0 1%;
   outline: none;
+  transition: .5s;
 }
 
 .contactoSec .contactoContenedor .formulario .formulario__input:focus {
@@ -544,6 +545,7 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
   outline: none;
   grid-row: 3 /7;
   grid-column: 1/3;
+  transition: .5s;
 }
 
 .contactoSec .contactoContenedor .formulario .formulario__textarea:focus {
@@ -555,7 +557,7 @@ footer .redes .redesLinks .redesLinks__item .redesLinks__link {
   color: #8ebf24;
   background-color: #000;
   border: 3px solid #444;
-  outline: 2px solid #2e590e;
+  outline: 2px solid #8ebf24;
   margin: 1em 0;
   grid-column: 1/3;
 }
